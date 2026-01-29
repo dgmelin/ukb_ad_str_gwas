@@ -1,0 +1,4 @@
+# Age Adjusted GWAS
+Since age is a major risk factor for AD, we ran association tests additionally adjusting for age and evaluated how this might affect our results. 
+To run association tests, the initial command/files remain unchanged. Only for the covariates file, we included age (UKB Data-Field [21022](https://biobank.ndph.ox.ac.uk/showcase/field.cgi?id=21022)). See `main/run_group_analysis.sh` for running the association analysis.
+For evaluation we compared effect sizes with and without including age as a covariate, compared significant variants and calculated 'precision gain' metrics as it can be expected that we add confidence when including additional covariates. See the `eval_age.ipynb` notebook for this. 
